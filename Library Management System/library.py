@@ -178,4 +178,6 @@ class Library:
             print('You entered wrong input, try again')
 
 #Example Usage
-exampele = Library('MRayan Asim')
+if __name__== '__main__':
+    name = input('Enter your name: ')
+    exampele = Library(name)
