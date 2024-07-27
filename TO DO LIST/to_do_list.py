@@ -4,9 +4,10 @@ class Task:
         self.priority = priority
         self.completed = False
 
+
 class ToDoList:
     def __init__(self):
-        print('Welcome to our to do list application')
+        print("Welcome to our to do list application")
         self.tasks = []
         self.main()
 
@@ -50,20 +51,21 @@ class ToDoList:
             print("5. Exit")
             choice = input("Enter your choice (1-5): ")
 
-            if choice == '1':
+            if choice == "1":
                 self.add_task()
-            elif choice == '2':
+            elif choice == "2":
                 self.remove_task()
-            elif choice == '3':
+            elif choice == "3":
                 self.view_tasks()
-            elif choice == '4':
+            elif choice == "4":
                 self.save_to_file()
                 print("Tasks saved to 'tasks.txt'.")
-            elif choice == '5':
+            elif choice == "5":
                 print("Thank you for using the to-do list application!")
                 break
             else:
                 print("Invalid choice. Try again.")
+
 
 if __name__ == "__main__":
     my_todo_list = ToDoList()
