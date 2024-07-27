@@ -116,7 +116,7 @@ class Library:
         print("Tell me the book name of the book you want to add in the library")
         book_name = input("")
         self.l2.append(book_name)
-        print(f"Now we have these books in library \n")
+        print("Now we have these books in library \n")
 
         for index, item in enumerate(self.l2):
             print(f"{index+1}. {item}")
@@ -132,7 +132,7 @@ class Library:
 
         else:
             self.l2.remove(book_name)
-            print(f"Now we have these books in library \n")
+            print("Now we have these books in library \n")
             for index, item in enumerate(self.l2):
                 print(f"{index+1}. {item}")
 
@@ -140,7 +140,7 @@ class Library:
                 content = f.read()
 
             with open("books_list.txt", "w") as f:
-                new_content = content.replace(book_name, f"\n")
+                new_content = content.replace(book_name, "\n")
                 f.write(new_content)
 
     def see_books(self):
